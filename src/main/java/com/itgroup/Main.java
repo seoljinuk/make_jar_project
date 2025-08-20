@@ -19,8 +19,10 @@ public class Main {
                     manager.selectAll();
                     break;
                 case 2:
+                    manager.insertData();
                     break;
                 case 3:
+                    manager.updateData();
                     break;
                 case 4:
                     manager.getSize();
