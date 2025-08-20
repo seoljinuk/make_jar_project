@@ -9,7 +9,7 @@ public class Main {
 
         while (true) {
             System.out.println("메뉴 선택");
-            System.out.println("0:종료, 1:목록 조회, 2:가입, 3:수정, 4:총회원수, 5:탈퇴, 6:회원정보, 7:xx, 8:xx");
+            System.out.println("0:종료, 1:목록 조회, 2:가입, 3:수정, 4:총회원수, 5:탈퇴, 6:회원정보, 7:성별조회, 8:상세보기");
             int menu = scan.nextInt(); // 선택한 메뉴
             switch (menu) {
                 case 0:
@@ -26,10 +26,15 @@ public class Main {
                     manager.getSize();
                     break;
                 case 5:
+                    manager.deleteData();
                     break;
                 case 6:
                     break;
                 case 7:
+                    manager.findByGender();
+                    break;
+                case 8:
+                    manager.getMemberOne();
                     break;
             }
         }
